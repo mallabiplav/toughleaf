@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tough Leaf: Biplav</title>
+  </head>
+  <body>
+    <aside>
+      <i class="fa-solid fa-boxes-stacked"> :</i>
+
+      <div class="middle-icons">
+        <i class="fa-solid fa-clock"></i>
+        <i class="fa-solid fa-calendar"></i>
+        <i class="fa-solid fa-grip-vertical"></i>
+        <i class="fa-solid fa-file"></i>
+      </div>
+
+      <div class="profile-image-container">
+        <img
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt=""
+          class="profile-image"
+        />
+      </div>
+    </aside>
+    <main>
+      <section class="calendar-header-section">
+        <div class="calendar-header">
+          <div class="month-heading">
+            <div class="month-heading-main">
+              <h1>Jan' 2020</h1>
+              <div class="icons">
+                <i class="fa-solid fa-less-than"></i>
+                <i class="fa-sharp fa-solid fa-circle"></i>
+                <i class="fa-solid fa-greater-than"></i>
+              </div>
+            </div>
+          </div>
+          <div class="calendar-options">
+            <i class="fa-solid fa-calendar"> :</i>
+          </div>
+          <div class="add-event">
+            <button class="add-event-button">Add event</button>
+          </div>
+        </div>
+        <div class="calendar-subheader">
+          <p class="month-heading-desc">
+            Here all your planned events. You will find information for each
+            event as well you can planned new one.
+          </p>
+        </div>
+      </section>
+      <section class="main-calendar-header">
+        <div class="days">
+          <h4>MON</h4>
+          <h4>TUE</h4>
+          <h4>WED</h4>
+          <h4>THU</h4>
+          <h4 class="active-day">FRI</h4>
+          <h4>SAT</h4>
+          <h4>SUN</h4>
+        </div>
+      </section>
+      <section class="main-calendar-dates">
+        <div class="dates">
+          <div class="date last-month-date">
+            <h4>30</h4>
+          </div>
+          <div class="date last-month-date">
+            <h4>31</h4>
+          </div>
+          <div class="date">
+            <h4>01</h4>
+            <div class="event-details">
+              <p class="event-name past-event">New Year</p>
+              <p class="time-duration">All day</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>02</h4>
+            <div class="event-details">
+              <p class="event-name task-complete past-event">
+                Project Overview & Analysis
+              </p>
+              <p class="time-duration">1:00 - 1:20 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Lunch with Sabrina</p>
+              <p class="time-duration">3:00 - 4:00 PM</p>
+            </div>
+          </div>
+          <div class="date active">
+            <h4 class="active-date">03</h4>
+            <div class="event-details">
+              <p class="event-name past-event">Review work place safety</p>
+              <p class="time-duration">11:00 - 11:30 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Team alignment</p>
+              <p class="time-duration">
+                Begins in <span class="begin-in">52 min</span>
+              </p>
+            </div>
+            <div class="additional-tasks">
+              <p>And 3 more</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>04</h4>
+            <div class="event-details">
+              <p class="event-name">Breakfast with Steven</p>
+              <p class="time-duration">8:00 - 9:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>05</h4>
+            <div class="event-details">
+              <p class="event-name">Lunch with Steven</p>
+              <p class="time-duration">2:00 - 3:00 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Flames vs Wild</p>
+              <p class="time-duration">7:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>06</h4>
+            <div class="event-details">
+              <p class="event-name task-complete">Collaboration Session</p>
+              <p class="time-duration">11:00 am - 2:00 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Lunch</p>
+              <p class="time-duration">3:00 - 4:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>07</h4>
+            <div class="event-details">
+              <p class="event-name">Chirstmas eve</p>
+              <p class="time-duration">All day</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>08</h4>
+            <div class="event-details">
+              <p class="event-name">Weekly Stand Up</p>
+              <p class="time-duration">1:00 - 12:20 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Team alignment</p>
+              <p class="time-duration">11:30 - 12:00 AM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>09</h4>
+            <div class="event-details">
+              <p class="event-name">Collaboration Session</p>
+              <p class="time-duration">10:15 - 11:30 AM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Lunch with Sabrina</p>
+              <p class="time-duration">4:00 - 4:45 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>10</h4>
+            <div class="event-details">
+              <p class="event-name">Review work place safety</p>
+              <p class="time-duration">11:00 - 1:30 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Team alignment</p>
+              <p class="time-duration">11:30 - 12:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>11</h4>
+            <div class="event-details">
+              <p class="event-name">Breakfast with Steven</p>
+              <p class="time-duration">8:00 - 9:00 AM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Oilers vs Flames</p>
+              <p class="time-duration">10:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>12</h4>
+            <div class="event-details">
+              <p class="event-name">Lunch with Steven</p>
+              <p class="time-duration">2:00 - 3:00 AM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>13</h4>
+          </div>
+          <div class="date">
+            <h4>14</h4>
+          </div>
+          <div class="date">
+            <h4>15</h4>
+            <div class="event-details">
+              <p class="event-name">Weekly Stand Up</p>
+              <p class="time-duration">1:00 - 12:20 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Team alignment</p>
+              <p class="time-duration">11:30 - 12:00 AM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>16</h4>
+          </div>
+          <div class="date">
+            <h4>17</h4>
+          </div>
+          <div class="date">
+            <h4>18</h4>
+          </div>
+          <div class="date">
+            <h4>19</h4>
+            <div class="event-details">
+              <p class="event-name">Lunch with Steven</p>
+              <p class="time-duration">2:00 - 3:00 AM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>20</h4>
+          </div>
+          <div class="date">
+            <h4>21</h4>
+          </div>
+          <div class="date">
+            <h4>22</h4>
+            <div class="event-details">
+              <p class="event-name task-complete">Collaboration Session</p>
+              <p class="time-duration">11:00 am - 2:00 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Lunch</p>
+              <p class="time-duration">3:00 - 4:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>23</h4>
+          </div>
+          <div class="date">
+            <h4>25</h4>
+          </div>
+          <div class="date">
+            <h4>26</h4>
+            <div class="event-details">
+              <p class="event-name task-complete">Collaboration Session</p>
+              <p class="time-duration">11:00 am - 2:00 PM</p>
+            </div>
+            <div class="event-details">
+              <p class="event-name">Lunch</p>
+              <p class="time-duration">3:00 - 4:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>27</h4>
+          </div>
+          <div class="date">
+            <h4>28</h4>
+          </div>
+          <div class="date">
+            <h4>29</h4>
+            <div class="event-details">
+              <p class="event-name">Oilers vs Flames</p>
+              <p class="time-duration">10:00 PM</p>
+            </div>
+          </div>
+          <div class="date">
+            <h4>30</h4>
+          </div>
+          <div class="date">
+            <h4>31</h4>
+            <div class="event-details">
+              <p class="event-name">Lunch with Steven</p>
+              <p class="time-duration">2:00 - 3:00 AM</p>
+            </div>
+          </div>
+          <div class="date next-month-date">
+            <h4>1</h4>
+            <div class="event-details">
+              <p class="event-name">Review work place safety</p>
+              <p class="time-duration">11:00 - 11:30 PM</p>
+            </div>
+          </div>
+          <div class="date next-month-date">
+            <h4>2</h4>
+            <div class="event-details">
+              <p class="event-name">Lunch with Steven</p>
+              <p class="time-duration">2:00 - 3:00 AM</p>
+            </div>
+          </div>
+          <div class="date next-month-date">
+            <h4>3</h4>
+            <div class="event-details">
+              <p class="event-name task-complete">Team alignment</p>
+              <p class="time-duration">11:30 - 12:00 AM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="message-button">
+        <i class="fa-solid fa-message"></i>
+      </div>
+    </main>
+  </body>
+</html>

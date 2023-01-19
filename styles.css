@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+:root{
+    --main-color: black;
+    --accent-color: orangered;
+    --secondary-color: rgb(116, 116, 116);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+main{
+    padding: 5em;
+    width: 100%;
+    overflow: hidden;
+}
+
+button, i{
+    cursor: pointer;
+}
+
+/* left navigation */
+aside{
+    padding: 0 2em;
+    border-right: 2px solid var(--secondary-color) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.middle-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+/* Adding counter to profile picture */
+.profile-image-container{
+    position: relative;
+    cursor: pointer;
+    
+    transition: all .2s ease-in-out;
+}
+.profile-image-container:hover{
+    transform: scale(1.1);
+   
+
+}
+
+.profile-image-container:hover::after{
+    transform: scale(1.2);
+    transition-delay: .2s;
+}
+.profile-image-container::after{
+    content: '7';
+    position: absolute;
+    right: -40%;
+    top: -30%;
+    font-size: .8rem;
+   background-color: var(--accent-color);
+   color: white;
+   padding: 2px 8px;
+   border: 5px solid white;
+   border-radius: 50%;
+   z-index: 2;
+   transition: all .2s ease-in-out;
+
+}
+.profile-image{
+    position: relative;
+    max-width: 3em;
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.calendar-header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items:center;
+}
+.month-heading-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+.month-heading-main h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.icons{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: .5em 0;
+    border-bottom: .5px solid var(--secondary-color);
+}
+.month-heading-desc{
+    margin-top: 1em;
+    max-width: 30em;
+}
+
+.fa-circle{
+    font-size: .5rem;
+}
+.calendar-options{
+    justify-self: center;
+    padding: .5em 0;
+    border-bottom: .5px solid var(--secondary-color);
+
+}
+.add-event{
+    justify-self: end;
+}
+
+.add-event-button{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    -webkit-box-shadow: 6px 11px 42px -10px rgba(0,0,0,0.35);
+    -moz-box-shadow: 6px 11px 42px -10px rgba(0,0,0,0.35);
+    box-shadow: 6px 11px 42px -10px rgba(0,0,0,0.35);
+}
+
+.days{
+    margin: 3em 0;
+    color: var(--secondary-color);
+}
+.days, .dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2em;
+}
+.main-calendar-dates{
+    overflow: scroll;
+    height: 100%;
+    padding-bottom: 10em;
+}
+
+/* Date details */
+.date{
+    padding-top: 1.5em;
+    min-height: 10em;
+    border-top: 2px solid var(--main-color);
+    cursor: pointer;
+}
+
+.date h4{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.date:hover.date h4{
+    transform: scale(1.02);
+}
+
+
+.time-duration, .last-month-date, .next-month-date, .past-event, .month-heading-desc, .additional-tasks{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.event-details{
+    margin-bottom: 1.5em;
+}
+
+
+
+.event-name{
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.additional-tasks{
+    font-size: .7rem;
+    text-decoration: underline;
+}
+.time-duration{
+    font-size: .7rem;
+    margin-top: .5em;
+}
+
+
+.begin-in{
+    font-weight: bolder;
+}
+
+
+/* Add this class to make the selected date the active one */
+.active{
+  border-top: 2px solid var(--accent-color);
+    background-color: antiquewhite;
+    padding: .5rem;
+    padding-top: 1.5em;
+}
+
+.active-day, .active h4, aside .fa-calendar{
+    color: var(--accent-color);
+}
+.active-day{
+    padding-left: .5rem;
+}
+
+
+/* Icon animations */
+i, .add-event-button, .date h4{
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+i:hover, .add-event-button:hover{
+    transform: scale(1.1);
+}
+
+
+/* Add this class to mark task as complate */
+.task-complete{
+    text-decoration: line-through;
+}
+
+/* Bottom corner message button */
+.message-button{
+    background-color: var(--accent-color);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    padding: 1em;font-size: 1em;
+}
