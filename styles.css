@@ -85,6 +85,8 @@ aside{
     border-radius: 50%;
     z-index: 1;
 }
+/* Side nav finish */
+
 
 .calendar-header{
     display: grid;
@@ -118,7 +120,7 @@ aside{
 }
 .calendar-options{
     justify-self: center;
-    padding: .5em 0;
+    padding: .5em 3px;
     border-bottom: .5px solid var(--secondary-color);
 
 }
